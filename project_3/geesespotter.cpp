@@ -8,20 +8,6 @@ int cartesian_to_index(int x_value, int y_value, std::size_t xdim, std::size_t y
 void index_to_cartesian (std::size_t index_value, std::size_t xdim, std::size_t ydim, int &x_value, int &y_value);
 
 
-/*
-int main(){
-
-    char *p_m{createBoard(5, 5)};
-    
-    hideBoard(p_m, 5, 5);
-    computeNeighbors(p_m, 5, 5);
-    reveal(p_m, 5, 5, 0, 2);
-    printBoard(p_m, 5, 5);
-
-    return 0;
-
-}
-*/
 
 //allocate a char array with xdim * ydim elements and initialize each element with zero.
 char *createBoard(std::size_t xdim, std::size_t ydim){
