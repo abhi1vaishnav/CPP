@@ -4,6 +4,14 @@
 
 #include "geesespotter.h"
 
+char *createBoard(std::size_t xdim, std::size_t ydim);
+void hideBoard(char *board, std::size_t xdim, std::size_t ydim);
+void cleanBoard(char *board);
+void printBoard(char *board, std::size_t xdim, std::size_t ydim);
+int mark(char *board, std::size_t xdim, std::size_t ydim, std::size_t xloc,std::size_t yloc);
+void computeNeighbors(char *board, std::size_t xdim, std::size_t ydim);
+int reveal(char *board, std::size_t xdim, std::size_t ydim, std::size_t xloc,std::size_t yloc);
+bool isGameWon(char *board, std::size_t xdim, std::size_t ydim);
 int cartesian_to_index(int x_value, int y_value, std::size_t xdim, std::size_t ydim);
 void index_to_cartesian (std::size_t index_value, std::size_t xdim, std::size_t ydim, int &x_value, int &y_value);
 
